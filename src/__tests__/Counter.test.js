@@ -1,5 +1,5 @@
 import React from "react";
-import { Counter } from "./Counter";
+import { Counter } from "../components/Counter";
 import { render, cleanup } from "@testing-library/react";
 
 afterEach(cleanup);
