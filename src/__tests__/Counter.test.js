@@ -1,10 +1,8 @@
-import React from "react";
-import { Counter } from "../components/Counter";
-import { render, cleanup } from "@testing-library/react";
+import React from 'react'
+import { Counter } from '../components/Counter'
+import { render } from '@testing-library/react'
 
-afterEach(cleanup);
-
-test("測試 Counter　數字有沒有問題", () => {
-  const { getByTestId } = render(<Counter number={30} />);
-  expect(getByTestId("number").textContent).toBe("Number :50");
-});
+test('測試 Counter　數字有沒有問題', () => {
+  const { getByTestId } = render(<Counter number={30} />)
+  expect(getByTestId('number').textContent).toBe('Number :50')
+})
